@@ -1,0 +1,23 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+  config.vm.box_check_update = false
+  
+  config.vm.define "chef_server" do |chef_server_config|
+	chef_server_config.vm.box = "ubuntu/trusty64"
+    chef_server_config.vm.hostname="chefserver.internal"
+	chef_server_config.vm.network :private_network, ip: "192.168.31.100"
+	chef_server_config.vm.network :forwarded_port, guest: 80, host: 8000
+	chef_server_config.vm.network :forwarded_port, guest: 443, host: 8443
+	chef_server_config.vm.provider :virtualbox do |vm|
+	   vm.memory=2048
+	   vm.cpu=2
+	 end
+  end
+  chef_server_config.vm.provision :shell, path: "script/bootstrapChefServer.sh"
+end
