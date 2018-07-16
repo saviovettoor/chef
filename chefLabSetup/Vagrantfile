@@ -16,8 +16,7 @@ Vagrant.configure("2") do |config|
 	chef_server_config.vm.network :forwarded_port, guest: 443, host: 8443
 	chef_server_config.vm.provider :virtualbox do |vm|
 	   vm.memory=2048
-	   vm.cpu=2
-	 end
+	end
+	chef_server_config.vm.provision :shell, path: "script/bootstrapChefServer.sh"
   end
-  chef_server_config.vm.provision :shell, path: "script/bootstrapChefServer.sh"
 end
