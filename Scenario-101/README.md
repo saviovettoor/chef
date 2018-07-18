@@ -2,29 +2,29 @@
 2. set pid and password "password@123"
 
 
-Create a cookbook for httpd
+Create a cookbook for manage-user
 ```
-workstn]# chef generate cookbook httpd
-Generating cookbook httpd
+workstn]# chef generate cookbook manage-user
+Generating cookbook manage-user
 ......
 ```
 
 After cookbook is ready now upload to chefserver
 ```
-workstn]# knife cookbook upload httpd
-Uploading httpd        [0.1.0]
+workstn]# knife cookbook upload manage-user
+Uploading manage-user        [0.1.0]
 Uploaded 1 cookbook.
 ```
 Listout the cookbook
 ```
 workstn]# knife cookbook list
-httpd   0.1.0
+manage-user   0.1.0
 ```
 Add our node1 to runlist for this cookbook
 ```
-workstn]# knife node run_list add node1 httpd
+workstn]# knife node run_list add node1 manage-user
 node1:
-  run_list: recipe[httpd]
+  run_list: recipe[manage-user]
 ```
 How password is masked?
 ```
