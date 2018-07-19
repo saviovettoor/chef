@@ -31,4 +31,4 @@ node1]#chef-client
 ```
 
 At the end
-<img src="../images/scenario-103a.png">
+<img src="../images/scenario-103a.PNG">
