@@ -24,3 +24,6 @@
 	A run-list defines all of the configuration settings that are necessary for a node that is under management by Chef to be put into the desired state and the order in which these configuration settings are applied.
 - role
 	A role is a way to define certain patterns and processes that exist across nodes in an organization as belonging to a single job function.
+	
+### Chef coomand cheat sheet - [link]()
+### Chef Q&A - [link](http://saviomathew.blogspot.com/2018/07/q-chef.html)
