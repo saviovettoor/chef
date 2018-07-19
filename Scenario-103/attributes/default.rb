@@ -1,0 +1,7 @@
+default['wordpress']['php_packages']="php", "php-common", "php-cli", "php-gd", "php-mysql"
+default['wordpress']['yum_packages']="wget", "unzip", "zip", "openssl-devel", "curl", "mariadb"
+default['wordpress']['installation_directory']="/opt"
+default['wordpress']['root_directory']="/var/www/html"
+default['wordpress']['website_url']="10.150.17.38"
+default['wordpress']['mysql_db_password']="mysqlDBpassword"
+default['wordpress']['wordpress_admin_password']="mywordpresspassword"
