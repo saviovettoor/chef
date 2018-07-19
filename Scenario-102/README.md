@@ -1,10 +1,14 @@
+# Challenge
+
+```
 1. Disable and stop iptables, selinux, firewalld
-2. Install HTTPD
-3. Replace the default httpd welcome page with page we have in local.
+2. Install httpd
+3. Replace the default httpd welcome page with custom page.
+```
 
 Lets generate cookbook httpd first
 ```
-wrkstn]#chef generate cookbook httpd
+wrkstn]#knife cookbook site install httpd
 Generating cookbook httpd
 ....
 ```
@@ -26,6 +30,3 @@ Applying cookbook to the node
 node1]#chef-client
 .....
 ```
-
-
-echo "Welcom to the world of Chefllll" > /usr/share/httpd/noindex/index.html
