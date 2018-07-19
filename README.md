@@ -25,5 +25,5 @@
 - role
 	A role is a way to define certain patterns and processes that exist across nodes in an organization as belonging to a single job function.
 	
-### Chef coomand cheat sheet - [link]()
+### Chef coomand cheat sheet - [link](http://saviomathew.blogspot.com/2018/07/chef-command-cheat-sheet.html)
 ### Chef Q&A - [link](http://saviomathew.blogspot.com/2018/07/q-chef.html)
