@@ -1,0 +1,9 @@
+DEPENDENCIES
+  lamp
+    path: .
+    metadata: true
+
+GRAPH
+  lamp (0.1.0)
+    mysql (~> 8.5.1)
+  mysql (8.5.1)
